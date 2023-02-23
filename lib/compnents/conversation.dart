@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
-import 'package:badges/badges.dart';
+import 'package:badges/badges.dart' as badge;
 
 import 'package:zego_zimkit/services/services.dart';
 
@@ -63,7 +63,7 @@ class _ZIMKitConversationWidgetState extends State<ZIMKitConversationWidget> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Badge(
+                    badge.Badge(
                       showBadge: conversation.unreadMessageCount != 0,
                       badgeContent: Text('${conversation.unreadMessageCount}'),
                       animationType: BadgeAnimationType.scale,
