@@ -66,7 +66,7 @@ class _ZIMKitConversationWidgetState extends State<ZIMKitConversationWidget> {
                     badge.Badge(
                       showBadge: conversation.unreadMessageCount != 0,
                       badgeContent: Text('${conversation.unreadMessageCount}'),
-                      animationType: BadgeAnimationType.scale,
+                      animationType: badge.BadgeAnimationType.scale,
                       animationDuration: const Duration(milliseconds: 150),
                       child: SizedBox(
                           width: 50, height: 50, child: conversation.icon),
